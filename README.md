@@ -1,6 +1,12 @@
-Cleaner - Robô Aspirador Inteligente com IA
+## Cleaner - Robô Aspirador Inteligente com IA
 
-</p>
+Este repositório está disponível em vários idiomas:
+
+- [English](README-en.md)
+- [Español](README-es.md)
+
+---
+
 <img src="./.github/1.png" alt="robo-aspirador-inteligente" title="Robô Aspirador Inteligente">
 
 ---
