@@ -78,8 +78,8 @@ O controlador gerencia o movimento e a limpeza do robô com várias lógicas de 
 4. **Funções auxiliares**: Como `verifica_sujeira_longe`, que determina onde estão as sujeiras mais distantes.
 
 #### **Funcionalidades de IA**:
-- **Aprendizado Supervisionado**: O robô é treinado para reconhecer padrões de limpeza das salas (sujas ou limpas) e usar esses dados para melhorar suas estratégias de limpeza.
-- **Aprendizado Não Supervisionado**: O robô adapta seu comportamento com base nas mudanças ambientais. Ele ajusta dinamicamente a ordem das tarefas de limpeza para minimizar o tempo e o consumo de energia, aprendendo com as sessões de limpeza anteriores.
+- **Modo Base**: O robô utiliza uma lógica simples, movendo-se entre as salas em um padrão predefinido e limpando de forma sequencial.
+- **Modo Onisciente**: O robô tem conhecimento prévio da localização de toda sujeira e planeja a ordem ideal de limpeza, otimizando o tempo e a eficiência de suas ações.
 
 ---
 
