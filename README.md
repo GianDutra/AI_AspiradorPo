@@ -1,89 +1,89 @@
-Cleaner - Intelligent Vacuum Robot with AI
+Cleaner - Robô Aspirador Inteligente com IA
 
 </p>
-<img src="./.github/1.png" alt="intelligent-vacuum-robot" title="Intelligent Vacuum Robot">
+<img src="./.github/1.png" alt="robo-aspirador-inteligente" title="Robô Aspirador Inteligente">
 
 ---
 
-### Technologies Used:
+### Tecnologias Usadas:
 
-- **Python**: The primary language used for development.
-- **Object-Oriented Programming (OOP)**: Classes and objects to represent the robot and environment.
-- **Autonomous Algorithms**: Control logic based on the state of the rooms, utilizing decision-making techniques.
-- **Artificial Intelligence**: The project applies both **supervised** and **unsupervised learning** methods to optimize the robot's cleaning strategy.
-
----
-
-### Project Overview:
-
-This project simulates the behavior of an intelligent vacuum robot that can move between various rooms and clean them based on different control strategies. The robot can operate in manual mode, where the user commands its actions, or in autonomous mode, where the robot makes decisions based on the dirt detected in the rooms. 
-
-The AI-driven features use **supervised learning** for recognizing patterns in room cleanliness and **unsupervised learning** for adapting the robot’s cleaning approach based on environmental conditions and previous experiences.
-
-**Control strategies include**:
-1. **Base Control**: The robot follows a predefined path cleaning rooms based on its current position.
-2. **Manual Control**: The user directly controls the robot's movements.
-3. **Omniscient Control**: The robot knows the position of all dirt and chooses the ideal order to clean.
+- **Python**: A linguagem principal utilizada no desenvolvimento.
+- **Programação Orientada a Objetos (POO)**: Classes e objetos para representar o robô e o ambiente.
+- **Algoritmos Autônomos**: Lógica de controle com base no estado das salas, utilizando técnicas de tomada de decisão.
+- **Inteligência Artificial**: O projeto aplica métodos de **aprendizado supervisionado** e **não supervisionado** para otimizar a estratégia de limpeza do robô.
 
 ---
 
-### How to Run the Project:
+### Visão Geral do Projeto:
 
-**Prerequisites**:
-- Ensure that **Python** is installed on your machine. If not, download it from [python.org](https://www.python.org/downloads/).
+Este projeto simula o comportamento de um robô aspirador inteligente que pode se mover entre diversas salas e limpá-las com base em diferentes estratégias de controle. O robô pode operar em modo manual, onde o usuário comanda suas ações, ou em modo autônomo, onde o robô toma decisões baseadas nas sujeiras detectadas nas salas.
 
-**Installing the Project**:
+As funcionalidades impulsionadas por IA utilizam **aprendizado supervisionado** para reconhecer padrões de limpeza das salas e **aprendizado não supervisionado** para adaptar a abordagem de limpeza do robô com base nas condições ambientais e nas experiências anteriores.
 
-1. Clone the repository:
+**As estratégias de controle incluem**:
+1. **Controle Base**: O robô segue um caminho predefinido limpando as salas com base na sua posição atual.
+2. **Controle Manual**: O usuário controla diretamente os movimentos do robô.
+3. **Controle Onisciente**: O robô sabe a posição de toda sujeira e escolhe a ordem ideal para limpar.
+
+---
+
+### Como Executar o Projeto:
+
+**Pré-requisitos**:
+- Certifique-se de que o **Python** esteja instalado em sua máquina. Caso contrário, baixe em [python.org](https://www.python.org/downloads/).
+
+**Instalando o Projeto**:
+
+1. Clone o repositório:
     ```bash
-    git clone https://github.com/YourUsername/IntelligentVacuumRobot.git
-    cd IntelligentVacuumRobot
+    git clone https://github.com/SeuUsername/RobôAspiradorInteligente.git
+    cd RobôAspiradorInteligente
     ```
 
-2. Run the program:
+2. Execute o programa:
     ```bash
     python main.py
     ```
 
 ---
 
-### Code Logic Breakdown:
+### Detalhamento da Lógica do Código:
 
 #### **Cleaner.py**:
-The `Cleaner` class represents the vacuum robot, responsible for:
-- Cleaning the room it is located in.
-- Moving left or right between rooms.
-- Checking if the room is dirty.
-- Updating its memory by recording the cleaned rooms.
+A classe `Cleaner` representa o robô aspirador, responsável por:
+- Limpar a sala onde está localizado.
+- Mover-se para a esquerda ou direita entre as salas.
+- Verificar se a sala está suja.
+- Atualizar sua memória, registrando as salas que limpou.
 
-Main Methods:
-- `limpar(salas)`: Cleans the room.
-- `mover_direita(salas)`: Moves the robot to the room on the right.
-- `mover_esquerda(salas)`: Moves the robot to the room on the left.
-- `verifica_limpo(salas)`: Checks if the room is dirty.
-- `atualiza_memoria()`: Records the cleaned room in the robot’s memory.
+Métodos principais:
+- `limpar(salas)`: Limpa a sala.
+- `mover_direita(salas)`: Move o robô para a sala à direita.
+- `mover_esquerda(salas)`: Move o robô para a sala à esquerda.
+- `verifica_limpo(salas)`: Verifica se a sala está suja.
+- `atualiza_memoria()`: Registra a sala limpa na memória do robô.
 
 #### **Controlador.py**:
-The controller manages the robot's movement and cleaning with several control logics:
+O controlador gerencia o movimento e a limpeza do robô com várias lógicas de controle:
 
-1. **logica_robo_base**: The robot moves from left to right, cleaning rooms.
-2. **logica_robo_onisciente**: The robot, knowing the location of dirt, chooses the optimal cleaning order.
-3. **manual_base**: The robot is manually controlled by the user, with options to move, clean, or stop the program.
-4. **Auxiliary functions**: Like `verifica_sujeira_longe`, which identifies the farthest dirt.
+1. **logica_robo_base**: O robô se move da esquerda para a direita, limpando as salas.
+2. **logica_robo_onisciente**: O robô, sabendo a localização da sujeira, escolhe a ordem ideal de limpeza.
+3. **manual_base**: O robô é controlado manualmente pelo usuário, com opções para mover, limpar ou parar o programa.
+4. **Funções auxiliares**: Como `verifica_sujeira_longe`, que determina onde estão as sujeiras mais distantes.
 
-#### **AI Features**:
-- **Supervised Learning**: The robot is trained to recognize patterns in room cleanliness (dirty or clean) and use this data to improve its cleaning strategies.
-- **Unsupervised Learning**: The robot adapts its behavior based on environmental changes. It dynamically adjusts the order of cleaning tasks to minimize time and energy consumption, learning from previous cleaning sessions.
+#### **Funcionalidades de IA**:
+- **Aprendizado Supervisionado**: O robô é treinado para reconhecer padrões de limpeza das salas (sujas ou limpas) e usar esses dados para melhorar suas estratégias de limpeza.
+- **Aprendizado Não Supervisionado**: O robô adapta seu comportamento com base nas mudanças ambientais. Ele ajusta dinamicamente a ordem das tarefas de limpeza para minimizar o tempo e o consumo de energia, aprendendo com as sessões de limpeza anteriores.
 
 ---
 
-### 👨‍💼 Author
+### 👨‍💼 Autor
 
 <table>
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://github.com/GianDutra.png" width="100px;" alt="Photo of Gian on GitHub"/><br>
+        <img src="https://github.com/GianDutra.png" width="100px;" alt="Foto do Gian no GitHub"/><br>
         <sub>
           <b>Gian Dutra</b>
         </sub>
@@ -91,3 +91,4 @@ The controller manages the robot's movement and cleaning with several control lo
     </td>
   </tr>
 </table>
+
