@@ -13,7 +13,7 @@ This repository is available in multiple languages:
 
 ### Technologies Used:
 
-- **Python**: The primary language used for development.
+- **Python**: The language chosen for its simplicity and efficiency in implementing algorithms and solving complex problems.
 - **Object-Oriented Programming (OOP)**: Classes and objects to represent the robot and the environment.
 - **Autonomous Algorithms**: Control logic based on the state of the rooms, utilizing decision-making techniques.
 - **Artificial Intelligence**: The project applies **supervised learning** and **unsupervised learning** methods to optimize the robot's cleaning strategy.
