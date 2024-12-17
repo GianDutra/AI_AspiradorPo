@@ -78,8 +78,9 @@ El controlador gestiona el movimiento y la limpieza del robot con varias lógica
 4. **Funciones auxiliares**: Como `verifica_suciedad_lejos`, que determina dónde está la suciedad más lejana.
 
 #### **Características de IA**:
-- **Aprendizaje Supervisado**: El robot es entrenado para reconocer patrones de limpieza en las habitaciones (sucias o limpias) y usa estos datos para mejorar sus estrategias de limpieza.
-- **Aprendizaje No Supervisado**: El robot adapta su comportamiento según los cambios en el entorno. Ajusta dinámicamente el orden de las tareas de limpieza para minimizar el tiempo y el consumo de energía, aprendiendo de las sesiones de limpieza anteriores.
+- **Modo Base**: El robot utiliza una lógica simple, moviéndose entre las habitaciones en un patrón predefinido y limpiando de forma secuencial.
+- **Modo Omnisciente**: El robot tiene conocimiento previo de la ubicación de toda la suciedad y planifica el orden ideal de limpieza, optimizando el tiempo y la eficiencia.
+
 
 ---
 
