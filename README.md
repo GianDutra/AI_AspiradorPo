@@ -13,7 +13,7 @@ Este repositório está disponível em vários idiomas:
 
 ### Tecnologias Usadas:
 
-- **Python**: A linguagem principal utilizada no desenvolvimento.
+- **Python**: A linguagem escolhida pela sua simplicidade e eficiência na implementação de algoritmos e resolução de problemas complexos.
 - **Programação Orientada a Objetos (POO)**: Classes e objetos para representar o robô e o ambiente.
 - **Algoritmos Autônomos**: Lógica de controle com base no estado das salas, utilizando técnicas de tomada de decisão.
 - **Inteligência Artificial**: O projeto aplica métodos de **aprendizado supervisionado** e **não supervisionado** para otimizar a estratégia de limpeza do robô.
