@@ -78,8 +78,8 @@ The controller manages the robot's movement and cleaning with several control lo
 4. **Auxiliary functions**: Like `verifica_sujeira_longe`, which identifies the farthest dirt.
 
 #### **AI Features**:
-- **Supervised Learning**: The robot is trained to recognize patterns in room cleanliness (dirty or clean) and use this data to improve its cleaning strategies.
-- **Unsupervised Learning**: The robot adapts its behavior based on environmental changes. It dynamically adjusts the order of cleaning tasks to minimize time and energy consumption, learning from previous cleaning sessions.
+- **Base Mode**: The robot uses a simple logic, moving between rooms in a predefined pattern and cleaning sequentially.
+- **Omniscient Mode**: The robot has prior knowledge of the location of all dirt and plans the optimal cleaning order, optimizing time and efficiency.
 
 ---
 
