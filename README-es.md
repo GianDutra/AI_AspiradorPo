@@ -13,7 +13,7 @@ Este repositorio está disponible en varios idiomas:
 
 ### Tecnologías Utilizadas:
 
-- **Python**: El lenguaje principal utilizado en el desarrollo.
+- **Python**: El lenguaje elegido por su simplicidad y eficiencia para implementar algoritmos y resolver problemas complejos.
 - **Programación Orientada a Objetos (POO)**: Clases y objetos para representar el robot y el entorno.
 - **Algoritmos Autónomos**: Lógica de control basada en el estado de las habitaciones, utilizando técnicas de toma de decisiones.
 - **Inteligencia Artificial**: El proyecto aplica métodos de **aprendizaje supervisado** y **no supervisado** para optimizar la estrategia de limpieza del robot.
@@ -63,11 +63,11 @@ La clase `Cleaner` representa el robot aspirador, encargado de:
 - Actualizar su memoria, registrando las habitaciones que ha limpiado.
 
 Métodos principales:
-- `limpiar(salas)`: Limpia la habitación.
-- `mover_derecha(salas)`: Mueve el robot a la habitación de la derecha.
-- `mover_izquierda(salas)`: Mueve el robot a la habitación de la izquierda.
+- `limpar(salas)`: Limpia la habitación.
+- `mover_direita(salas)`: Mueve el robot a la habitación de la derecha.
+- `mover_esquerda(salas)`: Mueve el robot a la habitación de la izquierda.
 - `verifica_limpo(salas)`: Verifica si la habitación está sucia.
-- `actualiza_memoria()`: Registra la habitación limpia en la memoria del robot.
+- `atualiza_memoria()`: Registra la habitación limpia en la memoria del robot.
 
 #### **Controlador.py**:
 El controlador gestiona el movimiento y la limpieza del robot con varias lógicas de control:
@@ -97,3 +97,4 @@ El controlador gestiona el movimiento y la limpieza del robot con varias lógica
     </td>
   </tr>
 </table>
+
